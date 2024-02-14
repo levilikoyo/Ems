@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7bc1b8a3-db5b-4dc0-a489-fcedd34e26df">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Dosh\\Documents\\NetBeansProjects\\intreprisemanagementsystem\\src\\intreprisemanagementsystem\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from employee]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ADRESSE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DOB" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLLNUM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TITRE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TEL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMAIL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BANKACC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DEGREE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NATIONALITE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATEIN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SUP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PHOTOS" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ETAT_CIVIL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PROFFESSION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOMS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ADRESSE1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RELATION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TEL1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TEL2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMAIL1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SALARY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STATUT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DEPARTEMENT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE_OUT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LDOB" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NUMNAT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CATE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="32" y="167" width="494" height="71" uuid="5f9c2c0c-61fa-425d-b951-890134584b4d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Entre les soussignés :
+La Société  TOGETHER WE CAN BUSINESS MANAGEMENT SYSTEM (TWBMS), située  A  KAMPALA, immatriculée au Registre du Commerce et des Sociétés de 000. sous le numéro "000.", représentée par Mr. LEVI LIKOYO MBALANINYA, agissant en sa qualité de DIRECTEUR GENERALE", 
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="278" width="82" height="20" uuid="7dfe489c-9846-4c6b-9723-7d9cfd693fc8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mlle/Mme/Mr  ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="278" width="147" height="20" uuid="9ee113ce-bb61-4bb0-bee2-8fd25113fdd6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAME}+" "+$F{LNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="261" y="278" width="74" height="20" uuid="5a04ca10-7fc3-4b68-ac92-346695fae680"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[de nationalité ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="335" y="278" width="142" height="20" uuid="2de413eb-be08-44c5-986a-6d87b272ada6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NATIONALITE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="477" y="278" width="49" height="20" uuid="bd8ee08a-3215-4328-afbe-83666fa6c4ca"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Né(e) le ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="32" y="298" width="100" height="20" uuid="f998f264-a0c0-4b5f-874d-bf5735526941"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DOB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="132" y="298" width="10" height="20" uuid="01d2dc71-02b6-492e-90c2-a3723e860f54"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[à]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="298" width="35" height="20" uuid="01b0e3bd-99e2-4697-a70f-451d2eb48515"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[N° SS :  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="298" width="79" height="20" uuid="8e6166d7-5666-432c-8cef-02612962b971"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Demeurant  à]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="442" y="298" width="84" height="20" uuid="be832a6c-7b90-4ad4-adf8-c3bf5c9a8a94"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ADRESSE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="426" y="258" width="100" height="20" uuid="4104a4b5-4b13-470a-ae1f-7284bd66f6b5"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Et :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="238" width="100" height="20" uuid="42426592-27dd-403c-89ef-f3c2894e061f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[D’une part,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="318" width="100" height="20" uuid="46320131-ac00-42db-852b-113c107b9fa0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[D’autre part,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="347" width="192" height="20" uuid="71ce481a-59bf-4027-9b06-8ed25541779e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Il est arrêté et convenu ce qui suit :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="380" width="141" height="20" uuid="b6f9741f-c333-4335-8e83-987d6ee13517"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 1 : Engagement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="400" width="193" height="20" uuid="2e8d4bf1-eb14-42cf-b156-db79d82105c7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vous êtes engagé (e) à compter du]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="218" y="400" width="100" height="20" uuid="d69ac360-6e78-45c1-abf4-33f883c02f11"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATEIN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="324" y="400" width="202" height="20" uuid="4ad2a7bd-b856-4449-a0ab-8bbb140aa2fb"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[au sein de la société  TWBMS /Congo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="420" width="494" height="20" uuid="022562e3-ed28-47a7-a27c-e06357e85b1a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[réserve du résultat favorable de la visite médicale d'embauche.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="450" width="192" height="20" uuid="5f89c762-a515-48b7-b8d4-91019450dfd0"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 2 : Fonctions exercées ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="470" width="192" height="20" uuid="9f23b320-30bf-44f2-b9d4-feeed7ef634a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous exercerez les fonctions de(d')]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="225" y="470" width="138" height="20" uuid="8ff5f2c5-556a-402d-854f-e38730dfb4cf"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TITRE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="363" y="470" width="100" height="20" uuid="f073a32c-3495-47e0-b39a-371394a59172"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[de Gategorie:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="490" width="493" height="45" uuid="2cce7d2b-3c91-4037-8de7-ac4a67f1fde0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous vous engagez à vous conformer aux dispositions conventionnelles en vigueur dans la société  TOGETHER WE CAN BUSINESS MANAGMENT SYSTEM. Actuellement, est applicable au reglement de la dite société . ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="546" width="286" height="20" uuid="39d05aff-2082-467c-b078-4db22e9a6b2d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 3 : Lieu de travail et clause de mobilité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="566" width="494" height="33" uuid="fd5dcc2d-4e03-42b5-bc01-4bbb33fe49d7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Votre lieu de travail sera le siège de la société, actuellement situé a la République Démocratique du Congo, Province du Haut-Uélé Ville Minier de Durba.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="599" width="494" height="64" uuid="6f547844-d2e3-4ed1-9955-5172320357bb"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Ce lieu de travail ou le service auquel vous êtes affecté(e) pourra être modifié en fonction des évolutions internes de l’entreprise. Les délais de prévenance pour ces éventuelles modifications respecteront les dispositions légales.
+A ce titre, vous acceptez tout changement de lieu de travail dans la dite région.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="674" width="285" height="20" uuid="f7806bd8-8338-420b-92ad-798b3b827bd8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 4 : Durée du contrat et période d’essai ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="694" width="312" height="20" uuid="f66f8f7b-fe32-4804-8019-b68c4b52c713"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Le présent contrat est conclu pour une durée déterminée,   du]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="345" y="694" width="81" height="20" uuid="610a242f-9bcb-4671-a6b2-6f2ff2eb0d8e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATEIN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="427" y="694" width="18" height="20" uuid="ba2bc61b-aa3a-4a3f-ad65-54416ecbdd43"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[au]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="694" width="81" height="20" uuid="93359b54-cd4e-409f-a6ab-6e92ea906867"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE_OUT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="714" width="494" height="59" uuid="1011c1a3-dd53-4227-9bb0-014be69f2fa3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[pour (préciser le motif : remplacement d’un salarié absent, accroissement temporaire d’activité….)
+Les trois(3) premiers mois de son exécution , constituent une période d'essai, au cours de laquelle chacune des parties pourra mettre fin sans indemnité d'aucune sorte, à charge pour la partie qui rompt la période d’essai de respecter les dispositions légales et conventionnelles.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="102" width="285" height="20" uuid="d9c1a980-5ca4-4ee1-beb5-95fd360da278"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CONTRAT DE TRAVAIL A DUREE DETERMINE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="142" y="298" width="119" height="20" uuid="b4722041-c4b0-48e7-818e-24e099e46995"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LDOB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="298" width="86" height="20" uuid="c41e50f7-f5d1-482d-a540-fb96454eaba7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NUMNAT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="470" width="63" height="20" uuid="c9566349-e0c6-4f51-91b4-70d38c7debf7"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CATE}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="2" y="2" width="146" height="50" uuid="a11fe1dc-ad31-4379-bbb9-8674e151e9f9"/>
+				<imageExpression><![CDATA["D:\\logos\\TWCM.jpg"]]></imageExpression>
+			</image>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="33" y="187" width="493" height="20" uuid="30f33f05-58fb-4ae5-be45-b60461ff0995"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 7 : Remboursement de frais]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="207" width="493" height="49" uuid="fd861640-8287-4fb0-a4b0-01f429e9f13b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[La société remboursera au salarié les frais engagés par le salarié dans le cadre de l'exercice de ses fonctions, sur présentation des justificatifs et conformément à la procédure de remboursement de frais applicable dans l'entreprise.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="265" width="192" height="20" uuid="5814730e-ed1c-4e88-9862-0c9bd5172092"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 8 : Congés payés ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="284" width="493" height="37" uuid="f461293d-53ad-491b-9464-f7cbfbd7b247"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous bénéficierez des congés payés et, en l’absence d’accord commun, la date de vos congés payés sera déterminée par la société.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="329" width="192" height="20" uuid="0b246c5f-b6c5-4aa3-a921-933255bbd6a7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 9 : Protection sociale ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="349" width="493" height="33" uuid="6f199ea4-820b-4320-8aab-caba2cdf98ce"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous cotiserez aux différents régimes de retraite et de prévoyance en vigueur au sein de notre Société.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="383" width="209" height="20" uuid="50560b82-ab11-40d0-b87a-b91060e2b03b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 10 : Règlement Intérieur ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="402" width="493" height="47" uuid="9d13d88b-d009-4f1d-b7ff-7196e9bd6ea7"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[(En fonction des entreprises). Les parties s’engagent à respecter les dispositions légales, réglementaires et conventionnelles en vigueur dans l’entreprise et le salarié déclare avoir pris connaissance du Règlement Intérieur.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="466" width="258" height="20" uuid="5e165939-e5bb-476a-af81-2e3ac7814aee"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 11 : Clause de confidentialité ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="485" width="493" height="183" uuid="7f511f61-d707-44b9-8469-65d9ddc5b4c6"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vous vous engagez à observer la discrétion la plus stricte sur les informations se rapportant aux activités de la société auxquelles vous aurez accès à l’occasion et dans le cadre de vos fonctions.
+Notamment, vous ne divulguerez à quiconque les méthodes, recommandations, créations, devis, études, projets, savoir-faire de l’entreprise résultant de travaux réalisés dans l’entreprise qui sont couverts par le secret professionnel le plus strict. Vous serez lié (e) par la même obligation vis-à-vis de tout renseignement ou document dont vous aurez pris connaissance chez des clients de la société.
+Tous les documents, lettres, notes de service, instructions, méthodes, organisation et/ou fonctionnement de l’entreprise dont vous pourrez avoir connaissance dans l’exercice de vos fonctions, seront confidentiels et resteront la propriété exclusive de la Société.
+Vous ne pourrez, sans accord écrit de la direction, publier aucune étude sous quelque forme que ce soit portant sur des travaux ou des informations couverts par l’obligation de confidentialité. Cette obligation de confidentialité se prolongera après la cessation du contrat de travail, quelle qu’en soit la cause.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="679" width="240" height="20" uuid="407ce0de-1502-41a5-9473-46503aceea57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 12 : Obligation de fidélité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="699" width="493" height="51" uuid="8d4ba5c3-e996-4b09-b587-88017f6c210a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Pendant la durée du présent contrat, vous prenez l’engagement de ne participer, sous quelque forme que ce soit, à aucune activité susceptible de concurrencer en tout ou partie celle de la société qui vous emploie.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="135" width="228" height="20" uuid="fe15292d-c24f-44cf-973c-1fda07927b7e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 6 : Durée et L'heure du travail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="155" width="493" height="20" uuid="a817bed2-d694-4a9c-9d13-ec3291078b90"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[En fonction de l’accord de l’entreprise.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="34" width="331" height="20" uuid="0b393555-672e-47e2-a2e6-eb55c10c51ad"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 5 : Rémunération ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="54" width="245" height="20" uuid="26b2ae02-61f9-43c1-ac5f-2ee4fd0689bd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Votre rémunération mensuel brute est fixée à ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="273" y="54" width="108" height="20" uuid="5f91aead-06c1-424a-9446-d6b559627f0d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SALARY}+"  $."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="32" y="74" width="494" height="63" uuid="2419f149-4150-4334-a483-2338572622f4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cette rémunération revêt un caractère forfaitaire et prend en considération tout dépassement que vous serez amenée à réaliser à votre initiative. les details concernant le payement seront sur le bultin de paie ou tout y sera inclus y compris des avantage et autre prime d'acourrangement]]></text>
+			</staticText>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="32" y="145" width="210" height="20" uuid="97d66a26-aad7-45e6-b211-eb591c090605"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 14 : Droit à l’image]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="165" width="494" height="20" uuid="05effbeb-c0b5-46b4-94e0-588a3e31c2ca"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous autorisez la société TWBMS à utiliser votre photo pour un usage strictement interne.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="200" width="286" height="20" uuid="f4ada66b-40b4-4bd2-827c-23040bd8d33b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 15 : Modifications des informations personnelles]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="220" width="494" height="57" uuid="c541fcda-46f4-42c7-8ba7-b4941a0b500b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous vous engagez à informer la société dans les meilleurs délais de tout changement de votre situation personnelle (adresse, nombre de personnes à charge…). Cette base d’informations est transmise au Comité d’Entreprise et lui permet d’attribuer d’éventuels avantages conditionnés à ses critères.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="274" width="494" height="49" uuid="2a7bdad9-0016-4666-8ee0-8d2329d83f6d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Votre accord implique formellement que vous n'êtes lié(e) à aucune autre entreprise et que vous avez quitté votre précédent employeur libre de tout engagement. Vous vous engagez à consacrer toute votre activité professionnelle au service de la société.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="321" width="494" height="48" uuid="8a3fddcc-4695-4b4b-a945-35d82007df1c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Vous voudrez bien nous confirmer votre accord en apposant votre signature précédée de la mention manuscrite "lu et approuvé" sur la dernière page, les pages précédentes étant également à parapher par vos soins.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="380" width="493" height="20" uuid="db231470-7ad3-49fa-8356-27c84736fa0e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nous vous prions de croire, à l'expression de nos salutations distinguées.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="450" width="80" height="20" uuid="e672f274-44c6-435f-948b-0566bfe62ae9"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[ Fait à Durba, le ]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="426" y="450" width="100" height="20" uuid="f3d63b8f-a5f8-4738-880d-476e8f379b8f"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="46" y="778" width="454" height="14" uuid="7cfae1ec-a795-4763-ac93-6fa1690e2e01"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Plot 123,Rotary Avenue(Bukoto),Kampala,Uganda,P.O Box 123;e-mail:info@abctogether.com;Website:www.together.ug.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="788" width="377" height="12" uuid="537de073-6b2b-4d71-babc-ca4c89a8befe"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Contacts- Landline:+256 123456789; MTN:+256 123456789;Airtel:+256 123456789]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="541" width="224" height="20" uuid="65752a2b-03cd-4772-8dfb-51387054751e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POUR LA RESOURCE HUMAINE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="541" width="172" height="20" uuid="f851ef99-96f6-4cbf-be5b-798a0033025f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[POUR LE(LA) SALARIE(E)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="36" width="245" height="20" uuid="3f7a2c4a-c4ae-4f41-926f-e1b095c6e8af"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 13 : Propriété Intellectuelle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="56" width="494" height="75" uuid="634b15eb-48c5-4a56-9f76-d2fe84e524ec"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dans le cadre de votre activité professionnelle, vous serez amené (e) à participer, au coté d’autres collaborateurs, et sous la direction et le contrôle de votre employeur à l'élaboration de diverses œuvres protégées par le droit de la propriété intellectuelle (notamment sites Internet, éléments d'ergonomie, architecture, illustrations, photographies, graphismes, sons, vidéos, icônes, logos, éléments de design, textes, structures de bases de données, etc.).]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

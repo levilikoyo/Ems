@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a97745e2-7bc7-4925-a292-0b4f93671031">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="169"/>
+	<queryString>
+		<![CDATA[select * from mvm_pers]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACTION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOMS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FONCTION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MOTIF" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESTINATION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AUTORISER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JRS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HEURE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMMENTAIRE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STATUT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NUM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GARITE_COMM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GARITE_HEURE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="QUERITE_SATATU" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TRANS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACCOMP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="432" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="305" width="555" height="127" uuid="8468ea16-c34c-460a-8856-9a528281b668"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="103" width="555" height="202" uuid="09dfb1bc-4dec-46ab-b4de-88561776ad4a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="103" uuid="43638140-4039-4f75-961f-f998537753da"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="107" width="69" height="20" uuid="2c8b4002-38b8-495c-8e24-430f27f73aee"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Mr.,Mm.,Mlle.;]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="72" y="107" width="472" height="20" uuid="d040d18e-7d6b-405e-b07d-6c79779c64c5"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="130" width="124" height="20" uuid="5802a5d9-2109-4470-b2fd-51d141cd9c3d"/>
+				<text><![CDATA[Occupant la fonction de(d'):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="130" width="417" height="20" uuid="8a1ab960-8245-4393-bdbb-1dd46082585a"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FONCTION}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="154" width="187" height="20" uuid="7b8eea10-f847-4813-95ae-86101f61d284"/>
+				<text><![CDATA[est autorisé à se rendre ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="265" y="176" width="79" height="20" uuid="e36a5ad3-ce0c-482c-a040-395fbdae7354"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="154" width="309" height="20" uuid="bdd959ba-59a6-4d54-90d8-a9326868d02e"/>
+				<text><![CDATA[à : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="125" y="154" width="419" height="20" uuid="6da257f6-1b0f-4edf-b770-da6e01476cf8"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DESTINATION}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="196" width="124" height="20" uuid="967e9ca4-3bb9-4b29-9812-14df16c49d74"/>
+				<text><![CDATA[ Pour la mission suivante :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="196" width="417" height="51" uuid="33b26176-34e5-4ffb-a426-17eff27fd21c"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MOTIF}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="250" width="124" height="20" uuid="12f1562a-430f-4c87-9d21-135fa272759d"/>
+				<text><![CDATA[ Il sera accompagné de:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="250" width="417" height="20" uuid="6d4d29b6-9b96-4b90-9d70-0daef3e7c1e4"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ACCOMP}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="273" width="203" height="20" uuid="7acafd56-6e16-422f-a260-2748cf6e0913"/>
+				<text><![CDATA[Il utilisera les moyens de transports suivant:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="206" y="273" width="338" height="20" uuid="25826806-21b6-43a0-b066-7257689fa6cf"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TRANS}]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement x="182" y="2" width="321" height="71" uuid="f63d5315-f5c5-4c76-af03-09384b48634c"/>
+				<imageExpression><![CDATA["D:\\logos\\en_tete.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="2" y="2" width="182" height="71" uuid="547dee5c-81e9-4b4b-8c5b-150448b80541"/>
+				<imageExpression><![CDATA["D:\\logos\\TWCM.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="3" y="309" width="541" height="31" uuid="3b8d25a2-becf-42fe-87f9-f7d6cdabfa2f"/>
+				<text><![CDATA[Nous prions aux autorités tant civiles que militaires de lui apporter le concours nécessaire pour l’accomplissement de cette mission en cas de besoin.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="370" width="118" height="20" uuid="7de92963-1551-4440-8771-26b01d6ece69"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[La Coordination]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="349" width="35" height="20" uuid="00824f52-5de3-4551-b097-aea241a0cb7b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Fait le ,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="461" y="349" width="83" height="20" uuid="64011aa7-40d8-4e43-834d-b060cb369347"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DATE1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="83" width="552" height="20" uuid="72aa2acb-622b-42d3-ad03-4271cd0d7c05"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ORDRE DE MISSION No: "+$F{NUM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="176" width="124" height="20" uuid="854f5bc4-24f7-45d8-b512-5356c483ee44"/>
+				<text><![CDATA[Durée de la Mission]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="127" y="176" width="121" height="20" uuid="f371c99c-e094-4756-b6e2-9d2d3579e953"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JRS}+"  Jours"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="248" y="173" width="66" height="21" uuid="08220ad9-7efd-4760-a85a-89b2392cd69b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[du]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="172" width="100" height="20" uuid="e105d52f-152c-4a8f-af30-ea55a1afec04"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[au]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="361" y="175" width="100" height="20" uuid="aa760931-b101-4fc9-9a9b-fd90261b638e"/>
+				<textElement>
+					<font fontName="Lucida Handwriting" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

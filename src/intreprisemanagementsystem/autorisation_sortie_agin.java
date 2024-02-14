@@ -1,0 +1,340 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package intreprisemanagementsystem;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+import net.proteanit.sql.DbUtils;
+
+/**
+ *
+ * @author DOSHE
+ */
+public class autorisation_sortie_agin extends javax.swing.JInternalFrame {
+
+   Connection con=null;
+PreparedStatement pst=null;
+ResultSet rs= null;
+String etrolls;
+String rolls;
+DefaultTableModel mode;
+    public autorisation_sortie_agin() {
+        initComponents();
+              con=JavaDbConnect.dbConnect();
+        call_table();
+        webDateField1.setDate(new Date());
+    }
+     public void call_table(){
+      
+           try{
+           
+             String sql="SELECT `REFF_NUM`,`AGIN`, `NAME_DRIVER`, `DEPART`, `ARRIVE`, `MOTIF`, `VALIDATION` AS 'VAL' FROM `driver_info` where validation !='LOG' ";
+     //  String sql="SELECT ID, `NUM_FACTURE`, `DATE_FACTURE`, `DESCRIPTION`, `DEBIT_QTY`, `DEBIT_PU`, `DEBIT_PT`, `DEBIT_TVA`, `CREDIT_QTY`, `CREDIT_PU`, `CREDIT_PT`, `CREDIT_TVA`, `DATES`, `NUM` FROM facture_fournisseur where compte='"+jComboBox6.getSelectedItem()+"'";
+       pst = con.prepareStatement(sql);
+      rs= pst.executeQuery();
+      
+       
+       jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+       mode=new DefaultTableModel();
+       
+       
+        TableColumn col0=jTable1.getColumnModel().getColumn(0);
+        TableColumn col1=jTable1.getColumnModel().getColumn(1);
+         TableColumn col2=jTable1.getColumnModel().getColumn(2);
+         TableColumn col3=jTable1.getColumnModel().getColumn(3);
+          TableColumn col4=jTable1.getColumnModel().getColumn(4);
+           TableColumn col5=jTable1.getColumnModel().getColumn(5);
+            TableColumn col6=jTable1.getColumnModel().getColumn(6);
+      
+       
+       col0.setPreferredWidth(100);
+       col1.setPreferredWidth(100);
+       col2.setPreferredWidth(100);
+       col3.setPreferredWidth(50);
+        col4.setPreferredWidth(50);
+        col5.setPreferredWidth(100);
+        col6.setPreferredWidth(20);
+       
+     
+      
+       
+       
+      // jTable1.setModel(mode);
+       
+     
+    }catch(SQLException ex ){
+     JOptionPane.showMessageDialog(null, ex);
+}
+    
+      
+      }
+     String NUMREFF;
+      public void etselect_jTable()
+   {
+       int row= jTable1.getSelectedRow();
+          String Table_click = (jTable1.getModel().getValueAt(row,0). toString());
+        try{
+          
+          String sql = "SELECT * FROM driver_info WHERE REFF_NUM= '"+Table_click+"'";
+          pst = con.prepareStatement(sql);
+          rs=pst.executeQuery();
+          if(rs.next()){
+              NUMREFF = rs.getString("REFF_NUM");//SUP,CHANT,NUM,DET,QTY,PU,PT,DATES
+              jTextField1.setText("DO YOU WANT TO APPROUVE THIS REQUEST?");
+               // String add2 = rs.getString("SUP");
+              //sup.setText(add2);
+                //String add3 = rs.getString("CHANT");
+              //chat.setText(add3);
+                //String add4 = rs.getString("NUM");
+              //roll.setText(add4);
+                //String add5 = rs.getString("DET");
+              //det.setText(add5);
+                //String add6 = rs.getString("QTY");
+              //qty.setText(add6);
+               //String add7 = rs.getString("PU");
+              //pu.setText(add7);
+               //String add8 = rs.getString("PT");
+             // pt.setText(add8);
+          }
+         
+    }catch(SQLException ex ){
+         JOptionPane.showMessageDialog(null,ex);
+     }
+   }
+        
+     
+        public void validationyes(){
+        try{
+        
+        String sql="UPDATE driver_info SET `VALIDATION`=? WHERE `REFF_NUM`='"+NUMREFF+"'";
+             
+        pst=con.prepareStatement(sql);
+       
+        pst.setString(1,"Yes");
+ 
+        
+    pst.executeUpdate();
+   // JOptionPane.showMessageDialog(null, "SAVED");
+        
+        }catch(Exception ex){JOptionPane.showMessageDialog(null, ex);}
+        
+            //}
+        }
+        
+         public void validationno(){
+        try{
+        
+        String sql="delete from driver_info  WHERE `REFF_NUM`='"+NUMREFF+"'";
+             
+        pst=con.prepareStatement(sql);
+       
+       // pst.setString(1,"No");
+ 
+        
+    pst.executeUpdate();
+   // JOptionPane.showMessageDialog(null, "SAVED");
+        
+        }catch(Exception ex){JOptionPane.showMessageDialog(null, ex);}
+        
+            //}
+        }
+
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jPanel3 = new javax.swing.JPanel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        webDateField1 = new com.alee.extended.date.WebDateField();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/intreprisemanagementsystem/icons8_Delivered_16px.png"))); // NOI18N
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 847, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+
+        jButton1.setText("Yes");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("No");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        webDateField1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(webDateField1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addContainerGap())
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(webDateField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jMenu1.setText("X");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Reports");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        setBounds(50, 0, 905, 433);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+etselect_jTable();       
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu1MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+validationno(); 
+call_table();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+validationyes();  
+call_table();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private com.alee.extended.date.WebDateField webDateField1;
+    // End of variables declaration//GEN-END:variables
+}

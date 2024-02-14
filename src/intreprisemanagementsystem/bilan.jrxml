@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0344da06-4747-42bf-93f2-1cf6c4437bcc">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="822"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="13c07d79-74a2-4ad2-bfd6-a8b2eab3d45b"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Dosh\\Documents\\NetBeansProjects\\intreprisemanagementsystem\\src\\intreprisemanagementsystem\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from bilanr]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMPTED" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INTITULED" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SOLDD" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMPTEC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INTITULEC" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SOLDC" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="408" width="221" height="20" uuid="7a44eab4-f276-4fca-b3e8-52251fba6aab"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Titre de participation et prets]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="368" width="204" height="20" uuid="662babe6-5f91-438a-8b8e-0f052b8d3c2a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dettes aupres des fournisseurs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="428" width="204" height="20" uuid="5aecc70c-1966-45e9-bc65-8a809f604aae"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Autres dettes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="328" width="204" height="20" uuid="0d2931fe-ed80-40b9-bc1c-929d107b2c4b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Emprunts et dettes aupres des associes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="188" width="204" height="20" uuid="0aa4d58d-2f5f-4cd8-94a0-f3daae473dcb"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Réserves]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="88" width="270" height="20" uuid="eea481ce-eec1-4c94-b34b-120ac05fa925"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSIF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="228" width="204" height="20" uuid="e5f84d39-6893-4105-ab4c-e03e42308921"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Résultat net de l’exercice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="368" width="221" height="20" uuid="74b64e3f-c6b8-4fe1-919d-7d2c4bcfa2af"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Le mobilier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="388" width="204" height="20" uuid="4d038120-374a-4a99-a0f0-d0aa342a5d87"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Dettes fiscales et sociales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="108" width="221" height="20" uuid="6e6e84b3-04b1-4cb1-8da3-079fba7c7f5e"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTITULE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="448" width="273" height="20" uuid="c7700470-0b8d-4e6f-aff2-79db7fbc1834"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stocks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="468" width="221" height="20" uuid="ad77b8d4-a8b9-4360-af26-e845866c88fc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Marchandises]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="108" width="52" height="20" uuid="83642364-54e8-4d5e-937a-16737833b2fa"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="268" width="270" height="20" uuid="0172713f-2daf-4e03-b419-0823b9b223a0"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<text><![CDATA[Dettes financieres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="489" y="108" width="66" height="20" uuid="d5fc3b39-7e72-40ed-aab8-c1eef10b1606"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SOLD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="388" width="221" height="20" uuid="b34faab5-4d20-43a5-9206-82a8809f0f0c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[les immobilisations financieres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="148" width="273" height="20" uuid="670a70f6-95de-41a2-9762-b3638c87bd9f"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[les immobilisations incorporelles]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="308" width="204" height="20" uuid="cfcbc1e6-139b-4911-b6be-219dbd50e2fc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Decouvert]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="88" width="273" height="20" uuid="cd0c3b2f-63d1-413b-8970-23a8d3eac8a1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACTIVE]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="273" y="108" width="12" height="420" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="11994f94-b063-49c9-a0ab-af74c2f03886"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="168" width="221" height="20" uuid="69c6a386-c371-4aec-b024-0f37ded78be9"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[frais d’établissement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="288" width="204" height="20" uuid="b146a1dd-4048-4a91-a7e5-781bcca17684"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Emprunts et dettes assimilées]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="308" width="221" height="20" uuid="c2ed6d62-bd29-49c2-b550-f1ccccb20b9f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Installation techniques,materiels et outillages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="188" width="221" height="20" uuid="85d6c9e6-d8da-45fc-a0d8-8c30e209ff14"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[frais du logiciel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="168" width="204" height="20" uuid="bad03281-45b2-4ed4-b9ff-1b2fe6656f2c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Capital]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="248" width="270" height="20" uuid="4191eaca-8046-4df9-bb63-edac1399489c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[DETTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="328" width="221" height="20" uuid="dc18cdc0-41d9-4fff-935a-69a5ac826adf"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Materiels de transport]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="408" width="204" height="20" uuid="4b03bd0e-7750-4725-baca-33e723880e61"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dettes sur immobilisations]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="348" width="221" height="20" uuid="409a6fe9-ff0d-4b53-931f-267098b31f8f"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Materiels de bureau et informatique]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="228" width="221" height="20" uuid="4778d00a-71c8-4660-9537-ccae534977ee"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[autres immobilisations incorporelles]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="68" width="555" height="20" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="6e5e669f-8bc0-4f1d-b739-85df54ae6216"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="428" width="221" height="20" uuid="7df763cf-bfd5-4055-a73f-287ca40dfbc5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACTIF CIRCULANT (AMT)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="108" width="204" height="20" uuid="c3b77e25-4d89-4fb0-9bb9-58a638996fcd"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTITULE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="508" width="221" height="20" uuid="e80e86f5-bc2b-47c5-8f9c-9fa0628ed009"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Stock en depots]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="128" width="273" height="20" uuid="759bd8c6-216d-4348-b1d3-7a6a7ea83636"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACTIVE IMMOBILISE (ALT)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="128" width="270" height="20" uuid="b4fc47c0-8f06-476f-8e66-51a5c4ab20c3"/>
+				<box leftPadding="5">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CAPITAUX PROPRES ET ASSIMILES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="248" width="273" height="20" uuid="b3ee8389-64e2-460a-9ac2-d331b6648752"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[les immobilisations corporelles]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="348" width="270" height="20" uuid="3a7d8e2d-0b06-435a-9996-7d6096af1363"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<text><![CDATA[Dettes d'exploitation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="208" width="221" height="20" uuid="450e0326-9651-4b5d-a207-288b056a1fc6"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[brevets, licences, concessions et marques]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="148" width="270" height="20" uuid="80cad3e6-c1aa-4a96-a038-e768e2e5645c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Capitaux propres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="488" width="221" height="20" uuid="9b3ee50f-a6fa-4f42-9c91-b564a352980e"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[matieres premiere]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="288" width="221" height="20" uuid="23d4a673-b89f-4445-9916-ca4dc96eba1b"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Constructions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="268" width="221" height="20" uuid="0a1a16fb-fc98-488f-9c97-3e4e8de98a19"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Terains]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="208" width="204" height="20" uuid="3e622c1c-f170-480c-8e3d-9d01e0d65167"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<text><![CDATA[Report à nouveau]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="333" y="468" width="100" height="20" uuid="8ce99468-81af-4eb0-bc90-e31f74d24266"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="273" y="328" width="12" height="140" uuid="7e859fb4-b3f2-42ca-b872-aebe39cdd4fc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="101" y="610" width="273" height="20" uuid="f5073b09-13d0-437b-8bb0-81608672606c"/>
+				<text><![CDATA[Creances]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="630" width="221" height="20" uuid="bf16a180-6cba-4131-9f33-a06f076ac0d5"/>
+				<text><![CDATA[Clients]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="650" width="221" height="20" uuid="fce3e348-6381-418c-b3e4-65850986e379"/>
+				<text><![CDATA[Subvention]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="670" width="273" height="20" uuid="a60bf3eb-869c-4562-b119-04755a52325e"/>
+				<text><![CDATA[Disponibilites]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="690" width="221" height="20" uuid="9fa7bc47-2a3a-4ffb-b5f0-b2faa53f169a"/>
+				<text><![CDATA[Caisse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="710" width="221" height="20" uuid="345a7b8b-850f-41b5-85d4-2fc938d1c766"/>
+				<text><![CDATA[Banque]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

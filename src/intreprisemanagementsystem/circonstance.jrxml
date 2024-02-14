@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="546690fb-7eba-447a-8c95-11adfdb89e05">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="300"/>
+	<queryString>
+		<![CDATA[select * from mvm_pers]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACTION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOMS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FONCTION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MOTIF" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DESTINATION" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AUTORISER" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="JRS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HEURE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMMENTAIRE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="STATUT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NUM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GARITE_COMM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="GARITE_HEURE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="QUERITE_SATATU" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NOM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TRANS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ACCOMP" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="115" width="555" height="270" uuid="f0c514d1-327e-4be1-86e6-734fbb6ae288"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="1" width="555" height="114" uuid="de316a85-96ef-451f-ad54-3ccfd3720da2"/>
+			</rectangle>
+			<image>
+				<reportElement x="2" y="4" width="182" height="71" uuid="3f9e8d04-0390-4704-811f-4806ff2ac8d9"/>
+				<imageExpression><![CDATA["D:\\logos\\TWCM.jpg"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="182" y="4" width="321" height="71" uuid="adafdf52-e86b-4477-b615-7ad9c0a90988"/>
+				<imageExpression><![CDATA["D:\\logos\\en_tete.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="376" y="126" width="173" height="20" uuid="0055b56a-a2ef-42b0-8f12-5b4d49e7be79"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Mme/M. "+$F{NOMS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="146" width="173" height="20" uuid="ef78f8fa-b38e-4ad0-aa6a-6e46afc5849e"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fonction: "+$F{FONCTION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="166" width="173" height="20" uuid="4dc0d938-6ea4-4c1d-9702-5b76149881cd"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Matricule: "+$F{ROLL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="205" width="32" height="20" uuid="e38a1500-97b9-457a-aafb-aef5b9b31430"/>
+				<textElement>
+					<font size="8" isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Objet:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="10" y="234" width="539" height="120" isPrintWhenDetailOverflows="true" uuid="8822779c-daef-47a1-9f61-34d56be583ae"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Mme/M.
+Nous faisons suite à votre demande  en date du                       par laquelle vous nous informez souhaiter prendre un congé de circonstance pendant la période suivante :
+
+Période de congés du                      au                  .
+Un total de             jours ;
+Motif:
+
+
+Nous vous prions de bien vouloir agréer, l’expression de nos salutations distinguées.]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="40" y="234" width="461" height="20" uuid="8c61039d-64db-4cc2-85f8-79c253d380c3"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NOMS}+" ,"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="185" y="244" width="56" height="20" uuid="3fee82c5-c442-4bce-900b-2996f809b2a6"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="205" width="285" height="20" uuid="2efed359-d9b6-47a4-80e0-71e2f80ca596"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Notification à la demande de congés  de circonstance]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="92" y="275" width="68" height="20" uuid="e05e0b9c-7d63-4f45-9419-6bcbb9c484a6"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="149" y="275" width="68" height="20" uuid="5980f3a9-7abe-423e-8a50-16447fc05a36"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE2}+" ;"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="54" y="285" width="36" height="20" uuid="e56c4c4e-bfa8-4e07-aa1e-b20150ddcc43"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JRS}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="34" y="295" width="515" height="20" uuid="e1e88c7c-a069-40d7-9dff-78d632af535e"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MOTIF}+" ."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="354" width="146" height="20" uuid="776e6e5c-f603-4911-b1f0-73b7f2315fa9"/>
+				<textElement textAlignment="Right">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[La coordination]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="801" width="555" height="1" uuid="375c91de-2c2a-43f4-8d7e-ffde36340584"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="95" width="555" height="20" uuid="8de28d0c-2d78-4a13-bd9d-01087c230391"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[NOTIFICATION A LA DEMANDE DE CONGE  DE CIRCONSTANCE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="187" y="780" width="80" height="20" uuid="3d1dbb91-32e5-430e-961c-6d8e07d9446e"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="267" y="780" width="40" height="20" uuid="c1c9f612-df02-4e1c-8c1d-1c315cc71b35"/>
+				<textElement verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

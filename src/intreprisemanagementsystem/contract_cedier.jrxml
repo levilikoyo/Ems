@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="613ae93e-e966-4e30-b3e3-57838dadd116">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="2649"/>
+	<queryString>
+		<![CDATA[SELECT * FROM `contract_prinT`]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CONTRACT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MARIAGE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CONJOINT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="POST" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="INSS" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ROLL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE_IN" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE_OUT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PROJECT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SALAIRE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NAMES" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BAYEUR" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AFF" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLAPSE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MONTH" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NATIONALITY" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="146" height="50" uuid="045c8d36-e432-48b2-90e4-60075d58814e"/>
+				<imageExpression><![CDATA["D:\\logos\\TWCM.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="23" y="80" width="155" height="20" uuid="f7410e9a-8152-4530-84d1-403ce3e10816"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRAT DE TRAVAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="118" width="518" height="78" uuid="42808170-1f7b-423c-ae95-ca5fb9668b26"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[CEDIER, une organisation nationale des droits congolais, travaille en partenariat avec d’autres organisations humanitaires internationaux et bailleurs de Fonds. Il intervient dans le domaine de protection de civiles, d’encadrement des enfants et de paix et transformation des conflits. 
+L’objectif de CEDIER est d’améliorer les conditions des vies humaines. Sur le terrain, il travaille avec les structures communautaires sous l’accompagnement des animateurs avec une équipe d’appui administrative.  A cet effet, le présent contrat de travail est établie ;
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="201" width="100" height="20" uuid="66f65bd7-14d9-40a0-afcd-09cf945e2384"/>
+				<text><![CDATA[ENTRE :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="232" width="518" height="67" uuid="6f34ffd6-3099-4341-956d-6bb05e71d594"/>
+				<textElement textAlignment="Justified">
+					<font isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Le Centre de Développement Intégral de l’Enfant Rural, « CEDIER » en sigle, ayant son siège social dans la Cité d’Uvira, Quartier Songo, avenu Mapinduzi, N° 144. Affilié à l’INSS sur le N°040200105P1, représenté par son coordinateur Mr Augustin Titi RUTANUKA y résidant en qualité du Coordinateur national. 
+Tél : + 243 997 723 817 / + 243 822 570 163  
+E-mail : cedierorg2008@yahoo.fr ; augustintiti24@gmail.com
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="309" width="100" height="20" uuid="ef955410-51a5-4950-a7a9-5aa7a2661513"/>
+				<text><![CDATA[ET :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="340" width="155" height="20" uuid="314d65bd-e7b1-42ae-8a77-0d1be7737450"/>
+				<text><![CDATA[Monsieur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="360" width="155" height="20" uuid="42b9981f-6ba1-4e42-adba-856072fef572"/>
+				<text><![CDATA[De nationalité                             ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="380" width="155" height="20" uuid="3081d41b-8822-466c-8c73-9735537b6ecd"/>
+				<text><![CDATA[Demeurant à                               ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="400" width="155" height="20" uuid="b5241a44-8ff4-419f-b21c-f83368a809fd"/>
+				<text><![CDATA[Etat civil                                      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="420" width="155" height="20" uuid="aafc6e21-081f-43c0-a921-5a125b5f7374"/>
+				<text><![CDATA[Affilié  (e) à l’INSS sous le numéro ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="446" width="155" height="20" uuid="0199baf9-d2f4-4dab-a3e3-a5e0c561721a"/>
+				<text><![CDATA[Dont la famille comprend :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="446" width="217" height="20" uuid="cccac398-964e-427f-971f-cfa1c8ce6187"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CONJOINT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="395" y="446" width="36" height="20" uuid="c6d8fd33-f138-44b8-8233-2861612a3561"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Et]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="431" y="446" width="24" height="20" uuid="ccacdf03-fb48-4b54-a218-c74665dc5dae"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAMES}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="455" y="446" width="86" height="20" uuid="71f4a71e-19bb-4ad5-b318-2fe1db991b3e"/>
+				<text><![CDATA[Enfants]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="340" width="363" height="20" uuid="97321f70-0d70-44e7-9482-19ef3bf2e0b6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAME}+"  "+$F{LNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="466" width="155" height="20" uuid="9fba9274-784f-402f-8fb9-4c5318bdbbdc"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Ci-après dénommé l’Employé ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="420" width="363" height="20" uuid="ccf4d5f6-10b8-4ea7-a2a0-6f1b75c8bc45"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INSS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="380" width="363" height="20" uuid="e86d3e57-144a-4d8f-a5ec-7f68cd2c8f55"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ADDRESS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="400" width="363" height="20" uuid="c4424c1c-cee8-4733-b33d-da021d0221fd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MARIAGE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="498" width="196" height="20" uuid="cc8a53eb-cdbc-46d1-a676-f67922bf3955"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Il a été convenu ce qui suit :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="537" width="518" height="38" uuid="9fbcd6f1-113b-414e-8d4d-b0069a4320c6"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[1.1.	L’employé se déclare libre de tout  engagement, décide de son grain, de participer et contribuer moralement et physiquement aux activités journalières de CEDIER. Il s’engage à respecter toutes clauses du présent contrat, le ROI  et le code de bonne conduite.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="575" width="518" height="20" uuid="e0a02f9f-49b1-46b3-a9cb-1a7886cac64b"/>
+				<text><![CDATA[1.2.	L’employé est engagé  au projet  intitulé :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="23" y="595" width="518" height="20" uuid="4dce288b-821e-46a1-8e98-dee44af980a0"/>
+				<textElement textAlignment="Justified">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PROJECT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="614" width="100" height="20" uuid="164581b4-4a55-4808-a065-add6bbf8dd15"/>
+				<text><![CDATA[en partenariat avec ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="23" y="634" width="518" height="20" uuid="11312cc9-60de-4f56-a9fb-e97fce72360f"/>
+				<textElement textAlignment="Justified">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BAYEUR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="654" width="518" height="20" uuid="3d22cedc-8ed8-49a3-8a60-45ccd086e464"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[aux conditions générales du Code de Travail et aux conditions particulières ci-dessous en qualité ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="23" y="674" width="518" height="20" uuid="b9a5c287-2e6d-4025-a53f-730a26b9b25d"/>
+				<textElement textAlignment="Justified">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{POST}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="692" width="518" height="39" uuid="e0fda39d-f151-40ff-9936-597c080a354e"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[L’employeur peut lui assigner toute autre responsabilité correspondante à sa fonction et à ses aptitudes. L’employé exerce son travail conformément au règlement d’ordre intérieur de l’organisation, lequel fait partie intégrante du présent contrat. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="736" width="518" height="16" uuid="516cee22-3b6e-4887-aadc-1579100ab271"/>
+				<text><![CDATA[1.3.	L’employé est affecté ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="23" y="752" width="518" height="20" uuid="aca815bf-eb40-4fc0-b0e3-bf9c55b73fa9"/>
+				<textElement textAlignment="Justified">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{AFF}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="770" width="518" height="30" uuid="e770ac2d-36a6-4c86-970a-99ab4cc11a48"/>
+				<text><![CDATA[Il peut lui être désigné un autre lieu de travail dans les limites de ses compétences, aptitudes professionnelles et des horaires des tâches nécessaires au bon fonctionnement de l’organisation.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="517" width="253" height="20" uuid="a9745b3b-6298-47ba-aadf-2ea45905947b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 1 : Poste et activités]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="360" width="363" height="20" uuid="893a3bf7-6581-4ee9-98d2-6e842185c0a1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NATIONALITY}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="23" y="13" width="253" height="20" uuid="2f068f2e-d77e-45dc-ad8f-face8c160830"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 2.Début et durée du contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="33" width="253" height="20" uuid="2a6fc8bc-cf4a-4c1f-9759-30d7cb81720a"/>
+				<text><![CDATA[L’engagement est conclu pour une durée déterminée de ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="33" width="110" height="20" uuid="9b85222e-d51b-4adc-9ed8-8f4df8b574d1"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Il prend cours à la date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="53" width="100" height="20" uuid="40d79e5c-08a1-4ab5-8755-06b3b9344a59"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE_IN}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="123" y="53" width="63" height="20" uuid="8e283d23-5b13-4253-8ce5-11573f4915f6"/>
+				<text><![CDATA[et se termine ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="209" y="53" width="100" height="20" uuid="ce5e3874-5bd6-4ca3-8bf2-ae2568b01b9c"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DATE_OUT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="309" y="53" width="232" height="20" uuid="567373e4-d497-4e77-849c-3d4d560f3137"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[date à laquelle le contrat prendra fin de plein droit.
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="83" width="163" height="20" uuid="81ccd5b5-9a6e-42a7-84a1-8e629c695cb4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 3. Fin du contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="103" width="518" height="16" uuid="d4285d50-146d-4b20-8cae-c6e49e2cca1c"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[3.1. 	Le contrat prend fin à la date d’expiration mentionnée ci-dessous.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="119" width="518" height="82" uuid="86c97e9d-1518-4986-b126-897ce9702f61"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[3.2. 	Toutefois, le contrat peut se terminer pour  les raisons suivantes : expiration du contrat, diminution des activités du programme, diminution au retrait des fonds disponibles pour le financement du programme, si pour toute raison CEDIER cesse d’opérer dans la zone d’implantation, en cas de conflits, de pillages, troubles ou évènements quelconques qui sont de nature à ne plus assurer la sécurité des activités de CEDIER, un accident ou une maladie qui empêche l’employé de travailler sur une période de plus de six mois, tout autre cas de force majeures rendant impossible la poursuite des activités de CEDIER.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="201" width="518" height="28" uuid="8d642074-962c-49da-b234-f58fa9685b5a"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[3.3.	Ce contrat peut être résilié par l’employeur, sans préavis pour faute lourde, dans les deux  jours ouvrables ou plus tard après la prise de connaissance des faits qu’une partie reproche à l’autre.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="229" width="518" height="28" uuid="1b60330f-4efc-41f9-afb6-f688b24486c1"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[3.4. 	Une fois la période d’essai achevée, chacune des parties pourra mettre fin      au présent contrat moyennement un préavis, donné à l’autre partie par accusé de réception ou remise devant un témoin.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="257" width="518" height="29" uuid="8b814291-4050-4230-adf7-86e2b6c93be2"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[3.5.	Si l’employeur prend l’initiative de résilier le contrat, le motif de rupture doit être expressément indiqué.
+	Pendant cette période l’employeur n’est tenu à aucune obligation à l’égard de l’employé.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="289" width="163" height="20" uuid="9bbdff29-b158-40d9-9c10-381e9a0f2f33"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 4. Salaire et dispositions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="309" width="286" height="20" uuid="e65bb41e-3241-4c22-896a-d5ccfbe195a8"/>
+				<text><![CDATA[4.1.	Le salaire de base s’élève au Dollars Américains ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="309" y="309" width="58" height="20" uuid="8d37ad16-e706-4e17-8466-db5ed178d7d5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SALAIRE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="367" y="309" width="100" height="20" uuid="04a20847-67cc-4e09-9b89-ab54dfdf8baf"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[USD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="329" width="518" height="56" uuid="6d7ee47a-6039-4632-bb1c-903dbf98a93a"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[A cela s’ajouteront les allocations familiales, les indemnités de logement et de transport (le salaire brut). Toutes les retenues en faveur de l’INSS et de DGI sont calculées depuis votre salaire de base et sont déduites de votre salaire brut, ces allocations et retenues sont données/ déduites en conformités avec la loi et sont susceptibles de modifications en rapport avec les décisions de ces organes étatiques.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="385" width="518" height="28" uuid="ce7b19d4-a1d8-4ccd-8125-674dd1b238da"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[4.2.	Les frais de missions payés au travailleur pour assurer son séjour loin du lieu habituel de travail ne font pas partie de la masse salariale et son susceptible de modification.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="413" width="518" height="41" uuid="c59dd367-7cf6-443d-a9d8-e1e8d8ab2f4a"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[4.3.	Les avances sur le versement du salaire ne seront en général pas accordées. Cependant, en cas de circonstances exceptionnelles, des avances pourront être faites à la discrétion de la coordination CEDIER. Toutes les avances seront limitées à une seule fois par mois et le montant ne sera pas supérieur à la moitié du salaire mensuel. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="454" width="518" height="43" uuid="ef15a871-1822-4d46-b8eb-510af28f0017"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[4.4.	La rémunération est payée mensuellement à terme échu ne dépassant pas un mois. Ce paiement est effectué à la banque ou soit à la caisse, entre le 25 et le 30 du mois, sauf en cas de retard dans le décaissement des fonds par le partenaire/bailleur.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="501" width="100" height="20" uuid="67bc180a-5eea-4f7c-9abb-48b52b488cde"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 5 : Absence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="521" width="518" height="27" uuid="0ecf92cd-f32b-40b3-9beb-675a9079b44f"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[5.1.	Si pour certaines raison, l’employé se trouve dans l’incapacité d’arriver à l’heure au travail, il doit contacter son supérieur hiérarchique pour lui communiquer les raison et la durée de son absence.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="548" width="518" height="38" uuid="1ae32248-e17a-40ab-b9eb-ebf3005e16e0"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[5.2.	Si pour raison de maladie, l’employé se trouve dans l’incapacité de travailler ; il doit contacter son supérieur hiérarchique pour lui communiquer les raison et la durée de son absence dans le but d’assurer son éventuel remplacement. Pour une absence supérieure à trois jours de travail, l’employé devra présenter un certificat médical.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="589" width="138" height="20" uuid="5fdb3827-802d-4e23-bfe2-7e38374bee4b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 6. Congés annuels]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="609" width="518" height="26" uuid="4d14e377-5af2-4100-a6ac-40edf461bc0c"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[6.1. 	L’employé a droit à un congé annuel de 18 jours ouvrables et ne peut y renoncer. L’employeur est tenu de le lui accorder.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="635" width="518" height="26" uuid="c9e2cd73-424c-4d3c-9659-8c16b7f3aa04"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[6.2.	Les congés de circonstances sont fixés tels que prévus par l’article 146 du code de travail et selon le manuel de procédure.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="664" width="163" height="20" uuid="54f75d51-c0b3-40a4-8df8-cd8c429027a5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 7. Horaire de travail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="684" width="518" height="38" uuid="5ce8f7a5-474f-49a1-960d-47d7ab148852"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[7.1.	L’horaire de travail pour le personnel est le suivant :
+De 08h00 à 12h30, et de 13h30 à 16h30 ; du lundi au vendredi. 
+Sur le Terrain, cet horaire peut être perturbé sur base de disponibilité de bénéficiaires. 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="722" width="518" height="27" uuid="e4b36fd8-accd-4e65-bf43-24eccb54725c"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[7.2.	Les heures supplémentaires de travail effectuées lors d’une période d’activité très chargés pourront être compensées uniquement par les heures de repos pendant des périodes calmes.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="753" width="196" height="20" uuid="1d6526fc-fbc7-411c-8e74-284cd9b3245d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 8. Amendement au contrat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="771" width="518" height="31" uuid="3fb48aab-d593-4df8-b8f5-03dbe0f44495"/>
+				<text><![CDATA[8.1.   Tout amendements de l’un d’article du présent contrat se fera au moyen d’un avenant signé par les deux parties (l’employeur et l’employé).]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="276" y="33" width="33" height="20" uuid="176ead23-f823-4d23-92c3-7decb2c83759"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLAPSE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="33" width="100" height="20" uuid="1c5929c8-e26b-4465-8b6b-6d29bfb07c73"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MONTH}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="23" y="10" width="138" height="20" uuid="69bd5047-5d82-46de-ae4a-0327e1e3ab0f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 9. Confidentialités]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="30" width="518" height="26" uuid="303ee371-618c-4659-8fae-8c8ca08d74f5"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[9.1.	L’employé s’engage à ne divulguer aucune information concernant les activités de CEDIER dont il pourrait avoir connaissance dans l’accomplissement de ses fonctions et qui serait de nature à porter préjudice à l’organisation.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="56" width="518" height="39" uuid="0bfb58ff-2064-49ea-ad03-61a4c7620dc1"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[9.2.   Cette obligation de confidentialité s’applique tant à l’égard des tiers que des salariés de CEDIER. L’employeur gardera tous ses effets pendant toute la durée du contrat de travail et se prolongera après la rupture de celui-ci pour quelque motif que ce soit.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="98" width="138" height="20" uuid="44c22878-5ba1-4b0e-bf6f-66d3024d8f3e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Article 10. Disposition finale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="118" width="518" height="41" uuid="684e767b-9edd-42d6-ad92-0a271bc04f67"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[10.1.	En signant le présent contrat, l’employé déclare avoir pris connaissance de chacun des articles du présent contrat, du règlement d’ordre intérieur, du code de bonne conduite, et autre politique, de la mission de CEDIER et de son profil de poste. Chacun de ces documents fait partie intégrante du contrat. L’employé affirme les avoir compris et s’engage à les respecter.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="159" width="518" height="26" uuid="f833d324-8d7d-4225-9e26-d244e74c918d"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[10.2.	Le non-respect de cet engagement est soumis à l’application par CEDIER des dispositions prévus à cet effet par le règlement intérieur de CEDIER.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="185" width="518" height="40" uuid="5e189bc9-0b1b-4951-931a-cdd3ceeb1d70"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[10.3. 	Tout litiges pouvant surgir quant à l’interprétation ou à l’exécution du présent contrat et/ou des règlements susmentionnés, devra d’abord être régler à l’amiable, les parties se réfèreront en dernier lieux aux dispositions prévus par la législation compétente à la matière.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="225" width="518" height="52" uuid="cb818eda-2533-4869-b2d9-ea4ab32811f2"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[
+L’employé déclare avoir lu et compris avant la signature, un exemplaire du contrat et les documents auxquels il se réfère.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="290" width="176" height="20" uuid="4251d754-1bd4-45c0-8741-a58f1412f3fe"/>
+				<text><![CDATA[Ainsi, fait à Uvira, en trois exemplaires, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="340" width="186" height="26" uuid="5c7e2bca-8136-4dae-98db-c75cc505680a"/>
+				<text><![CDATA[Lu et Approuvé
+L’Employé    
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="23" y="402" width="286" height="20" uuid="f3e5cf28-86d1-4097-8d95-4998a68ed79d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NAME}+"  "+$F{LNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="428" y="346" width="100" height="20" uuid="35d2aa4f-dd2a-4597-aa8b-d0beaa823321"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pour CEDIER ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="319" y="290" width="100" height="20" uuid="44754e37-aa2a-4c94-9617-41dba67ad5be"/>
+				<textFieldExpression><![CDATA[$F{DATE_IN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

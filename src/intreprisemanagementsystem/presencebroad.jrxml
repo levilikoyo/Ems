@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f2315399-3da6-4c7b-8bdd-80ea838d67ce">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Dosh\\Documents\\NetBeansProjects\\intreprisemanagementsystem\\src\\intreprisemanagementsystem\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from attendance]]>
+	</queryString>
+	<field name="EMP_NAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMP_LNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMP_POST" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="EMP_ROLL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DAYS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATES" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="109" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="68" uuid="0e6fbf6c-b238-4c49-bc18-cd8619d830ee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="216" y="48" width="165" height="20" uuid="e4b7a9f3-7c25-4434-88e7-7b85c658aac5"/>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Rapport de Presence Mensuel]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="0" width="100" height="20" uuid="29000a51-a6de-445b-9654-60d92148e12e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EMP_ROLL}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="33" y="68" width="124" height="20" uuid="bae45f09-1b40-450c-82ba-f817294a5d40"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMP_NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="33" y="88" width="124" height="20" uuid="ad6ef35a-9730-4fd4-8f98-90ae0e605d4e"/>
+				<textFieldExpression><![CDATA[$F{EMP_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="157" y="69" width="131" height="20" uuid="446c1c83-b9e2-4ef3-8569-e3a81023cfa2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMP_LNAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="157" y="89" width="131" height="20" uuid="1a3bf832-ae4b-432f-a256-f2a2e939290d"/>
+				<textFieldExpression><![CDATA[$F{EMP_LNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="287" y="69" width="121" height="20" uuid="59a6ee6e-382d-4247-bdc4-a4f8958d3139"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMP_POST]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="287" y="89" width="121" height="20" uuid="f73a0ba2-70da-4a7c-be48-206807719d1b"/>
+				<textFieldExpression><![CDATA[" "+$F{EMP_POST}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="408" y="69" width="44" height="20" uuid="330c935a-ac0d-49f8-9090-cad83c513ade"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAYS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="408" y="89" width="44" height="20" uuid="ca202811-4bba-43ad-86a0-b541cece399c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DAYS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="452" y="69" width="100" height="20" uuid="4d1853fe-6797-480c-8652-26444bacc4a2"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="452" y="89" width="100" height="20" uuid="626e1305-c3f6-4dda-8cab-e888790aa700"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DATES}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="129" height="50" uuid="2e1ba9e0-bdd9-4cc1-87f8-af24350ea5b5"/>
+				<imageExpression><![CDATA["D:\\logos\\TWCM.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
